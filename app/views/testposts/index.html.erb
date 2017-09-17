@@ -13,8 +13,7 @@
   <tbody>
     <% @testposts.each do |testpost| %>
       <tr>
-        <td><%= testpost.text %></td>
-        <td><%= link_to 'Show', testpost %></td>
+        <td><a href="testposts/<%= testpost.id %>"><%= testpost.text %></a></td>
         <td><%= link_to 'Edit', edit_testpost_path(testpost) %></td>
         <td><%= link_to 'Destroy', testpost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

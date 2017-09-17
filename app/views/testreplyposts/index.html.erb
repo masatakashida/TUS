@@ -16,14 +16,9 @@
       <tr>
         <td><%= testreplypost.text %></td>
         <td><%= testreplypost.testpost_id %></td>
-        <td><%= link_to 'Show', testreplypost %></td>
         <td><%= link_to 'Edit', edit_testreplypost_path(testreplypost) %></td>
         <td><%= link_to 'Destroy', testreplypost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Testreplypost', new_testreplypost_path %>
