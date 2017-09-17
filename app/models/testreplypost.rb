@@ -1,0 +1,2 @@
+class Testreplypost < ApplicationRecord
+end

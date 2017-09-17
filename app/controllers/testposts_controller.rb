@@ -10,6 +10,7 @@ class TestpostsController < ApplicationController
   # GET /testposts/1
   # GET /testposts/1.json
   def show
+    @testreplyposts = @testpost.testreplyposts.all
   end
 
   # GET /testposts/new

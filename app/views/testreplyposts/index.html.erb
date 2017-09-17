@@ -1,20 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>〇〇さんのエスキス:</strong>
-  <%= @testpost.text %>
-</p>
-
-<%= link_to 'Edit', edit_testpost_path(@testpost) %> |
-<%= link_to 'Back', testposts_path %>
-
-
+<h1>新しくコメントをつける</h1>
 
 <table>
   <thead>
     <tr>
       <th>Text</th>
-      <th>Testposts</th>
+      <th>Testpost</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -32,4 +24,6 @@
   </tbody>
 </table>
 
-<%= link_to 'コメントしてみる！', new_testreplypost_path %>
+<br>
+
+<%= link_to 'New Testreplypost', new_testreplypost_path %>
