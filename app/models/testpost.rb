@@ -1,0 +1,2 @@
+class Testpost < ApplicationRecord
+end
